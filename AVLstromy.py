@@ -15,14 +15,14 @@ class AVLNode:
         larger than the height of the higher subtree. (default 1)
     """
 
-    def __init__(self, val):
+    def __init__(self, value):
         """
         Parameters
         ----------
         value : int
             value of the node"""
         
-        self.value = val
+        self.value = value
         self.left = None
         self.right = None
         self.height = 1
@@ -38,7 +38,7 @@ class AVLTree:
 
     Methods
     -------
-    get_height(node): 
+    get_height(self, node): 
         Returns height of a node.
 
     get_balance(self, node):
@@ -74,7 +74,7 @@ class AVLTree:
     def __init__(self):
         self.root = None
 
-    def get_height(node):
+    def get_height(self, node):
         """Returns height of a node."""
         return 0 if not node else node.height
     
